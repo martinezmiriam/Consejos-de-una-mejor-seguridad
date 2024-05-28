@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .card-title {
+            font-family: 'Roboto', sans-serif; /* Cambiado a Times New Roman */
+            font-size: 1.5rem; /* Tipo de tamaño de la Letra */
+            text-align: center;
+            position: absolute;
+            top: 35%; /* Se llega acomodar en donde se va a poner la imagen*/
+            left: 50%; /* Se podra mover de izquierda a derecha*/
+            z-index: 2;
+            color: rgb(255, 255, 255);
+            transform: translate(-50%, -50%);
+            background-color: rgba(17, 67, 98, 0.144);
+          }
+        .top-image {
+            width: 100%;
+            height: 70vh; /* Ajusta la altura de la imagen a la mitad de la página */
+            object-fit: cover; /* Ajusta la imagen para cubrir todo el área */
+        }
+        .top-text {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background-color: rgba(17, 67, 98, 0.144);
+            color: rgb(255, 255, 255);
+            z-index: 2;
+            text-align: center;
+        }
+        ul {
+            list-style-type: disc;
+            padding: 5;
+        }
+        p{
+            font-family: 'Bahnschrift Light', sans-serif;
+            
+        }
+        .table-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea */
+        }
+    
+        .table-wrapper {
+          display: inline-block;
+          vertical-align: top;
+          margin: 15px;
+        }
+    
+        .table-container table {
+          display: inline-block;
+          vertical-align: top;
+          margin: 15px;
+          border-collapse: collapse;
+        }
+    
+        .table-container th,
+        .table-container td {
+          padding: 8px;
+          text-align: left;
+          border: 1px solid #0a1d53;
+        }
+    
+        .table-container th {
+          background-color: #1530de;
+          color: rgb(249, 246, 246);
+          font-family: 'Bahnschrift Light', sans-serif;
+        }
+    
+        .table-container tr:nth-child(even) {
+          background-color: #faf8f8;
+        }
+        .btn {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 16px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+    
+        .btn-Regresar {
+          background-color: rgba(26, 24, 178, 0.849);
+          color: white;
+          padding: 15px 30px;
+          font-size: 1.5rem;
+          font-family: 'Bahnschrift Light', sans-serif;
+        }
+        .content{
+        text-align: center; /* Centrar el texto y la imagen */
+      }
+      .content img {
+          display: block; /* Asegura que la imagen se comporta como un bloque */
+          margin: 20px auto; /* Centramos la imagen */
+          max-width: 100%; /* Asegura que la imagen no sea más grande que el contenedor */
+          height: auto; /* Mantiene la proporción de la imagen */
+      }
+       
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="img/azul.jpg" class="top-image" alt="Nueva Imagen">
+        <div class="card-title">
+            <h1>CONSEJOS GENERALES DE SEGURIDAD</h1>
+        </div>
+    </div>
+    <div class="card">
+        <ul>
+            <h1>¿Cuáles son los consejos básicos de seguridad que debería tener en cuenta?</h1>
+            <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
+                <span style="font-weight: bold;">&#9679;</span> Usa software Anti-Malware
+              </h1>
+            <p>El uso de software para detectar malware es una defensa eficaz contra los programas 
+                maliciosos que han sido modificados para realizar acciones no deseadas u obtener información 
+                de forma fraudulenta. Disponemos de más recursos e información acerca de cómo protegerse de 
+                las diversas amenazas de malware en dispositivos y sistemas operativos de todo tipo.</p>
+            <p>En gran parte, “antivirus” y “anti-malware” se refieren a lo mismo. Ambos hacen referencia al 
+                software diseñado para detectar, proteger y eliminar software malicioso. Pese a lo que podría 
+                sugerir el nombre, el software antivirus protege contra algo más que virus; simplemente utiliza 
+                un nombre un poco anticuado para describir lo que hace.</p>
+                <img src="img/Anti-Malware.jpeg">
+        </ul>
+        <ul>
+            <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
+                <span style="font-weight: bold;">&#9679;</span> Utiliza el cifrado siempre que sea posible
+              </h1>
+              <p>
+                Cada vez más dispositivos y sistemas operativos hacen que el cifrado esté disponible, de bajo 
+                impacto y fácil de configurar. Mediante el uso de encriptación, siempre que sea posible, estarás 
+                protegiendo tu privacidad y la confidencialidad de tus datos.
+              </p>
+        </ul>
+        <ul>
+            <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
+                <span style="font-weight: bold;">&#9679;</span> Utiliza un gestor de contraseñas
+              </h1>
+              <p>
+                Los administradores de contraseñas son herramientas útiles para generar contraseñas nuevas, únicas 
+                y seguras para sitios y servicios, así como un método para almacenar las contraseñas de forma que 
+                no puedan ser accesibles a terceros.
+                </p>
+              <p>
+                Cuando usas el Administrador de contraseñas de Google, puedes guardar las contraseñas en tu Cuenta 
+                de Google o en tu dispositivo.
+              </p>
+              <p>
+                Los gestores de contraseñas son aplicaciones que sirven para almacenar nuestras credenciales (usuarios
+                , contraseñas, sitios web a los que corresponden, etc.) en una base de datos cifrada mediante una 
+                contraseña maestra.
+              </p>
+              <img src="img/gestor.jpeg" class="content">
+        </ul>
+        <ul>
+            <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
+                <span style="font-weight: bold;">&#9679;</span> Copias de seguridad periódicas
+              </h1>
+              <p>
+                Son una parte esencial de la protección de los datos de tu sitio web y garantizan que siempre estén 
+                disponibles cuando más los necesites. La copia de seguridad envía tus datos a los servidores de copia 
+                de seguridad de Google y te ayuda a transferir datos entre dispositivos. La función de copia de seguridad 
+                recopila cierta información para ofrecer servicios en tu dispositivo. Algunas de estas funciones usan los 
+                Servicios de Google Play.
+              </p>
+              <div class="table-container">
+                <div class="table-wrapper">
+                  <!-- La etiqueta <table> abre una tabla -->
+                  <table>
+                    <thead>
+                      <tr>
+                        <!-- <tr> inserta un renglón en la tabla -->
+                        <th>Datos / Velocidad</th>
+                        <!-- inserta una celda de encabezado -->
+                        <th>56  Kbps</th>
+                        <th>256  Kbps</th>
+                        <th>1,5  Mbps</th>
+                        <th>10  Mbps</th>
+                        <th>100  Mbps</th>
+                      </tr>
+                    </thead>
+                    <!-- Todo el contenido de la tabla se encierra -->
+                    <!-- dentro de <tbody> -->
+                    <tbody>
+                      <tr>
+                        <td>100 MB</td>
+                        <td>4 horas</td>
+                        <td>1 hora</td>
+                        <td>10 minutos</td>
+                        <td>2 minutos</td>
+                        <td>9 segundos</td>
+                      </tr>
+                      <tr>
+                        <td>500 MB</td>
+                        <td>21 horas</td>
+                        <td>5 horas</td>
+                        <td>45 minutos</td>
+                        <td>7 minutos</td>
+                        <td>42 segundos</td>
+                      </tr>
+                      <tr>
+                        <td>1 GB</td>
+                        <td>2 días</td>
+                        <td>10 horas</td>
+                        <td>2 horas</td>
+                        <td>15 minutos</td>
+                        <td>2 minutos</td>
+                      </tr>
+                      <tr>
+                        <td>5 GB</td>
+                        <td>9 días</td>
+                        <td>2 días</td>
+                        <td>8 horas</td>
+                        <td>1 hora</td>
+                        <td>8 minutos</td>
+                      </tr>
+                      <tr>
+                        <td>10 GB</td>
+                        <td>18 días</td>
+                        <td>4 días</td>
+                        <td>16 horas</td>
+                        <td>3 hora</td>
+                        <td>15 minutos</td>
+                      </tr>
+                      <tr>
+                        <td>30 GB</td>
+                        <td>54 días</td>
+                        <td>12 días</td>
+                        <td>2 dias</td>
+                        <td>7 hora</td>
+                        <td>43 minutos</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p style="font-size: 15px">Tabla 1. Tiempos de copia de seguridad aproximados</p>
+                </div>
+              <p>
+                Es fundamental hacer copias de seguridad de la información personal importante en discos 
+                duros externos y crear nuevas copias de seguridad con regularidad. El ransomware, un tipo 
+                de malware, consiste en que los ciberdelincuentes bloquean tu computadora para que no puedas 
+                acceder a archivos valiosos. Crear una copia de seguridad de tus datos y de los de tu familia 
+                ayuda a mitigar el impacto de un ataque de ransomware. Puedes protegerte aún más si tienes el 
+                software de seguridad adecuado. Otras formas de malware te niegan el acceso a tus datos personales 
+                saturando el sistema o simplemente borrando archivos, así que ten cuidado.
+              </p>
+        </ul>
+        <ul>
+          <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
+            <span style="font-weight: bold;">&#9679;</span> No inicies sesión como administrador
+          </h1>
+          <p>
+            Ejecutar un programa como administrador garantizará que el programa tenga todos los derechos para hacer 
+            cualquier cosa que necesite en tu computadora. Como esto puede ser arriesgado, los sistemas operativos 
+            Windows eliminan estos privilegios de forma predeterminada.
+          </p>
+          <p><strong>Riesgo de Infección por Malware:</strong></p>
+          <p>
+            Al tener privilegios administrativos, cualquier malware que infecte el sistema también puede operar con esos 
+            mismos privilegios, lo que facilita que pueda hacer cambios significativos y potencialmente destructivos en el 
+            sistema operativo.
+          </p>
+          <p><strong>Errores Accidentales:</strong></p>
+          <p>
+            Con acceso administrativo, es más fácil realizar cambios críticos en el sistema por error, como borrar archivos 
+            importantes o modificar configuraciones esenciales que pueden afectar la estabilidad del sistema.
+          </p>
+          <p><strong>Acceso No Autorizado:</strong></p>
+          <p>
+            Si alguien más obtiene acceso a tu cuenta de administrador, esa persona tendrá control total sobre el sistema, 
+            lo que puede llevar a la pérdida de datos, robo de información o incluso a que la máquina se convierta en parte 
+            de una red de bots.
+          </p>
+        </ul>
+    </div>
+
+
+
+    <div>
+      <a href="consejos.html" class="btn btn-Regresar">Regresar...</a>
+    </div>
+</body>
+</html>
