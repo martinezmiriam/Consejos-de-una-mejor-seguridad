@@ -95,15 +95,6 @@
           font-size: 1.5rem;
           font-family: 'Bahnschrift Light', sans-serif;
         }
-        .content{
-        text-align: center; /* Centrar el texto y la imagen */
-      }
-      .content img {
-          display: block; /* Asegura que la imagen se comporta como un bloque */
-          margin: 20px auto; /* Centramos la imagen */
-          max-width: 100%; /* Asegura que la imagen no sea más grande que el contenedor */
-          height: auto; /* Mantiene la proporción de la imagen */
-      }
        
     </style>
 </head>
@@ -117,29 +108,6 @@
     <div class="card">
         <ul>
             <h1>¿Cuáles son los consejos básicos de seguridad que debería tener en cuenta?</h1>
-            <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
-                <span style="font-weight: bold;">&#9679;</span> Usa software Anti-Malware
-              </h1>
-            <p>El uso de software para detectar malware es una defensa eficaz contra los programas 
-                maliciosos que han sido modificados para realizar acciones no deseadas u obtener información 
-                de forma fraudulenta. Disponemos de más recursos e información acerca de cómo protegerse de 
-                las diversas amenazas de malware en dispositivos y sistemas operativos de todo tipo.</p>
-            <p>En gran parte, “antivirus” y “anti-malware” se refieren a lo mismo. Ambos hacen referencia al 
-                software diseñado para detectar, proteger y eliminar software malicioso. Pese a lo que podría 
-                sugerir el nombre, el software antivirus protege contra algo más que virus; simplemente utiliza 
-                un nombre un poco anticuado para describir lo que hace.</p>
-                <img src="img/Anti-Malware.jpeg">
-        </ul>
-        <ul>
-            <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
-                <span style="font-weight: bold;">&#9679;</span> Utiliza el cifrado siempre que sea posible
-              </h1>
-              <p>
-                Cada vez más dispositivos y sistemas operativos hacen que el cifrado esté disponible, de bajo 
-                impacto y fácil de configurar. Mediante el uso de encriptación, siempre que sea posible, estarás 
-                protegiendo tu privacidad y la confidencialidad de tus datos.
-              </p>
-        </ul>
         <ul>
             <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
                 <span style="font-weight: bold;">&#9679;</span> Utiliza un gestor de contraseñas
@@ -158,7 +126,9 @@
                 , contraseñas, sitios web a los que corresponden, etc.) en una base de datos cifrada mediante una 
                 contraseña maestra.
               </p>
-              <img src="img/gestor.jpeg" class="content">
+              <div style="text-align: center;">
+                <img src="img/gestor.jpeg" class="content" style="max-width: 50%;">
+            </div>
         </ul>
         <ul>
             <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
@@ -280,9 +250,6 @@
           </p>
         </ul>
     </div>
-
-
-
     <div>
       <a href="consejos.html" class="btn btn-Regresar">Regresar...</a>
     </div>

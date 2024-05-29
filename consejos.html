@@ -33,11 +33,29 @@
         ul {
             list-style-type: disc;
             padding: 0;
+            
         }
         li {
             margin-bottom: 15px;
             padding-left: 15px; /* Agrega separación entre viñeta y texto */
+            color: white;
         }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+      
+          .btn-regresar {
+            background-color: rgb(42, 147, 200);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+          }
     </style>
 </head>
 <body>
@@ -46,12 +64,15 @@
         <div class="list-container">
             <h1 style="font-size: 36px;" class="card-title">Seguridad: tu escudo digital </h1>
             <ul>
-                <li style="font-size: 24px;" >Consejos generales</li>
-                <li style="font-size: 24px;">Protección de contraseñas</li>
-                <li style="font-size: 24px;">Seguridad en redes sociales</li>
-                <li style="font-size: 24px;">Protección contra malware</li>
-                <li style="font-size: 24px;">Recursos y enlaces útiles</li>
+                <li><a href="C_generales.html" style="font-size: 24px;  color: rgb(255, 255, 255);">Consejos generales</a></li>
+                <li><a href="Proteccion.html" style="font-size: 24px; color: rgb(255, 255, 255);">Proteccion de Redes</a></li>
+                <li><a href="red_social.html" style="font-size: 24px; color: rgb(255, 255, 255);">Seguridad en Redes Sociales</a></li>
+                <li><a href="malware.html" style="font-size: 24px; color: rgb(255, 255, 255);">Proteccion en Malware</a></li>
+                <li><a href="C_general.html" style="font-size: 24px; color: rgb(255, 255, 255);">recursos</a></li>
             </ul>
+            <div>
+                <a href="seguridad.html" class="btn btn-regresar">Regresar...</a>
+            </div>
         </div>
     </div>
 </body>
