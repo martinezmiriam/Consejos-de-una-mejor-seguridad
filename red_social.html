@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .card-title {
+            font-family: 'Roboto', sans-serif; /* Cambiado a Times New Roman */
+            font-size: 1.5rem; /* Tipo de tamaño de la Letra */
+            text-align: center;
+            position: absolute;
+            top: 35%; /* Se llega acomodar en donde se va a poner la imagen*/
+            left: 25%; /* Se podra mover de izquierda a derecha*/
+            z-index: 2;
+            color: rgb(224, 226, 227);
+            transform: translate(-50%, -50%);
+            background-color: rgba(17, 67, 98, 0.144);
+          }
+        .top-image {
+            width: 100%;
+            height: 70vh; /* Ajusta la altura de la imagen a la mitad de la página */
+            object-fit: cover; /* Ajusta la imagen para cubrir todo el área */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+      
+          .btn-Regresar {
+            background-color: rgba(26, 24, 178, 0.849);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            font-family: 'Bahnschrift Light', sans-serif;
+          }
+
+    </style>
+    <body>
+        <div class="card">
+            <img src="img/red_social_2.jpg" class="top-image" alt="Nueva Imagen">
+            <div class="card-title">
+                <h1>SEGURIDAD</h1>
+                <h1>EN REDES</h1>
+                <h1>SOCIALES</h1>
+            </div>
+        </div>
+        <div class="card">
+            <ul>
+                <h1>Seguridad de la Red.</h1>
+                <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
+                    <span style="font-weight: bold;">&#9679;</span> Tener una mejor seguridad en nuestras redes sociales
+                  </h1>
+                <p>Las redes sociales se han convertido en nuestros álbumes de fotos, en nuestros tablones de anuncios, 
+                    incluso en nuestra voz. Publicamos lo que nos ocurre durante el día, damos nuestra opinión sobre noticias, 
+                    participamos en debates... Y todo esto, muy a menudo, de forma pública.</p>
+                <p>Twitter, Facebook, Instagram, Snapchat, LinkedIn y otras muchas redes sociales funcionan como un escaparate 
+                    de la vida de millones de personas. Sin embargo, aunque nos encanta compartir nuestras experiencias con 
+                    nuestros contactos, debemos tener en cuenta que, si lo hacemos sin tomar una serie de precauciones, toda la 
+                    información que publicamos puede terminar siendo accesible por otros usuarios de la red social.</p>
+                    <div style="text-align: center;">
+                        <img src="img/Redes Sociales.png" class="content" style="max-width: 40%;">
+                    </div>
+                    <h1 style="font-size: 24px; color: rgba(17, 15, 155, 0.836);">
+                        <span style="font-weight: bold;">&#9679;</span> Consejos para una mejor seguridad en las redes
+                      </h1>
+                <p>
+                    1. No compartas tus dispositivos:   Una de las primeras normas no escritas para garantizar la seguridad de tus 
+                    redes sociales o las de tus clientes es que no debes compartir con otras personas los dispositivos que utilizas
+                     a diario. Por más que tengas confianza en tus amigos o con tus familiares, ceder esta información a otras personas 
+                     puede ponerlos en riesgo incluso de forma involuntaria.
+                </p>
+                <p>
+                    2. Utiliza contraseñas robustas:    Las contraseñas robustas deberían ser la norma en todas las plataformas de 
+                    internet que utilices para cualquier cosa. Si tu contraseña es demasiado débil, puedes tener la certeza de que los 
+                    hackers serán capaces de averiguarla utilizando un puñado de herramientas para facilitar sus ataques de diccionario.
+                </p>
+                <p>
+                    3. No instales aplicaciones de fuentes dudosas: Tu smartphone puede quedar muy expuesto si instalas aplicaciones que 
+                    no sean oficiales y que no provengan de Play Store o App Store. Las apps ilegítimas con frecuencia tienen malware 
+                    incorporado en su código y aprovechan para robar toda la información de los usuarios que las instalan.
+                </p>
+                <div>
+                    <a href="consejos.html" class="btn btn-Regresar">Regresar...</a>
+                  </div>
+            </ul>
+        </div>
+    </body>
+</html>
