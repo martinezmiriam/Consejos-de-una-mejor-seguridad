@@ -26,30 +26,46 @@
     .card-text-overlay {
       position: absolute;
       top: 50%;
-      left: 100px;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: white;
       font-family: 'Serif', sans-serif;
-      font-size: 1.9rem;
+      font-size: 1.5rem;
+      text-align: center;
+      width: 90%;
     }
 
     .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-  
-      .btn-Avanzar {
-        background-color: rgba(28, 156, 196, 0.263);
-        color: white;
-        padding: 15px 30px;
-        font-size: 1.5rem;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-Avanzar {
+      background-color: rgba(28, 156, 196, 0.263);
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .card-text-overlay {
+        font-size: 1.2rem;
       }
 
+      .card-text-overlay h2 {
+        font-size: 24px;
+      }
+
+      .btn-Avanzar {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -58,12 +74,10 @@
     <div class="card-text-overlay">
       <h1 class="card-title">Seguridad:</h1>
       <h1 class="card-title">tu escudo digital</h1>
-      <h2 style="font-size: 36px;">"Ofrecer la mejor información para mejorar</h2>
-      <h2 style="font-size: 36px;">la seguridad reflejada en malas reseñas."</h2>
-    <a href="consejos.html" class="btn btn-Avanzar">Avanzar...</a>
-
+      <h2>"Ofrecer la mejor información para mejorar</h2>
+      <h2>la seguridad reflejada en malas reseñas."</h2>
+      <a href="consejos.html" class="btn btn-Avanzar">Avanzar...</a>
     </div>
   </div>
-  
 </body>
 </html>
